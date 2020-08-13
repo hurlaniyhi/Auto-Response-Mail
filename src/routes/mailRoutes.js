@@ -67,8 +67,9 @@ router.post('/invitation', async (req, res)=>{
                     <p>GTBank API developer portal is built to allow third party developers integrate with our APIs easily.</p>
                     <p>Take advantage of our API offerings grouped into Payments, Accounts, Identity and build best in class products and solutions that speak to our customers' needs.</p>
                     <p>We are hereby specially inviting you and your team to join the pilot test of the sandbox before we launch. 
-                    Kindly share the email address of the person/persons to test the APIs so we can approve after an account has been created</p>
-                  </div>
+                    Kindly share the email address of the person/persons to test the APIs so we can approve after an account has been created.</p>
+                    <p>Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
+                    </div>
                 </td>
               </tr>
 
@@ -174,6 +175,7 @@ router.post('/approval', async (req, res)=>{
                   <p>Kindly note that a lien has been placed on the organization bank account you filled on the Go-Live form and 
                   an email on your daily consumption would be shared with you.</p>
                   <p>Welcome to GTBank API Community.</p>  
+                  <p>Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
                 </div>        
               </td>
             </tr>
@@ -278,6 +280,7 @@ router.post('/launchSoon', async (req, res)=>{
                   touches before our final launch of the developer portal. This would be done as soon as possible. 
                   Kindly exercise patience as we put things in place.</p>
                   <p>We would inform you when the developer portal is finally up for use.</p>
+                  <p>Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
                   <p>Thank you.</p>  
                 </div> 
               </td>
