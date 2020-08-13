@@ -49,20 +49,38 @@ router.post('/invitation', async (req, res)=>{
           from: '"API Connect (GTBank)" <fintech.request@gmail.com>', 
           to: receiverEmail, 
           subject: 'Invitation to use our APIs', 
-         // text: `Dear ${receiverName}, we have different API's you can use.`,
-          html: `<div style="margin-top: 7%">
-          <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595954364/blog/2020-07-28T16:40:12.645Z.png" 
-          />
-          <div style="padding-left: 3%; padding-right: 3%; justify-content: center">
-          <p>Dear ${receiverName},</p>
-          <p>GTBank API developer portal is built to allow third party developers integrate with our APIs easily.</p>
-          <p>Take advantage of our API offerings grouped into Payments, Accounts, Identity and build best in class products and solutions that speak to our customers' needs.</p>
-          <p>We are hereby specially inviting you and your team to join the pilot test of the sandbox before we launch. 
-          Kindly share the email address of the person/persons to test the APIs so we can approve after an account has been created</p>
-          </div>
-          <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595956228/blog/2020-07-28T17:11:14.703Z.png" 
-          />
-          </div>`
+          html: `
+            
+            <table>
+          
+              <tr>
+                <td>
+                  <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595954364/blog/2020-07-28T16:40:12.645Z.png" 
+                  style="width: 95%; margin-left: 2.5%; margin-right: 2.5%" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div style="width: 80%; margin-left: 10%; margin-right: 10%">
+                    <p style="padding-bottom: 3%">Dear ${receiverName},</p>
+                    <p>GTBank API developer portal is built to allow third party developers integrate with our APIs easily.</p>
+                    <p>Take advantage of our API offerings grouped into Payments, Accounts, Identity and build best in class products and solutions that speak to our customers' needs.</p>
+                    <p>We are hereby specially inviting you and your team to join the pilot test of the sandbox before we launch. 
+                    Kindly share the email address of the person/persons to test the APIs so we can approve after an account has been created</p>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595956228/blog/2020-07-28T17:11:14.703Z.png" 
+                  style="width: 95%; margin-left: 2.5%; margin-right: 2.5%" />
+                </td>
+              </tr>
+        
+            </table>  
+          `
              
         };
       
@@ -135,21 +153,40 @@ router.post('/approval', async (req, res)=>{
         to: receiverEmail, 
         subject: 'Approval to go live', 
        // text: `Dear ${receiverName}, we have different API's you can use.`,
-        html: `<div style="margin-top: 7%">
-        <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595966324/blog/2020-07-28T19:59:32.490Z.png" 
-        />
-        <div style="padding-left: 3%; padding-right: 3%; justify-content: center">
-        <p>Dear ${receiverName},</p>
-        <p>Your request to migrate from development plan to production environment has been carefully reviewed.</p>
-        <p>We are happy to inform you that your request has been granted and your application has been 
-        successfully migrated from the sandbox to live plan</p>
-        <p>Kindly note that a lien has been placed on the organization bank account you filled on the Go-Live form and 
-        an email on your daily consumption would be shared with you.</p>
-        <p>Welcome to GTBank API Community.</p>
-        </div>
-        <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595966422/blog/2020-07-28T20:01:12.087Z.png" 
-        />
-        </div>`
+        html: `
+          
+          <table>
+          
+            <tr>
+              <td>
+                <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595966324/blog/2020-07-28T19:59:32.490Z.png" 
+                style="width: 95%; margin-left: 2.5%; margin-right: 2.5%" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="width: 80%; margin-left: 10%; margin-right: 10%">
+                  <p>Dear ${receiverName},</p>
+                  <p>Your request to migrate from development plan to production environment has been carefully reviewed.</p>
+                  <p>We are happy to inform you that your request has been granted and your application has been 
+                  successfully migrated from the sandbox to live plan</p>
+                  <p>Kindly note that a lien has been placed on the organization bank account you filled on the Go-Live form and 
+                  an email on your daily consumption would be shared with you.</p>
+                  <p>Welcome to GTBank API Community.</p>  
+                </div>        
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595966422/blog/2020-07-28T20:01:12.087Z.png" 
+                style="width: 95%; margin-left: 2.5%; margin-right: 2.5%" />
+              </td>
+            </tr>
+        
+          </table>  
+          `
       
       };
     
@@ -222,21 +259,40 @@ router.post('/launchSoon', async (req, res)=>{
         to: receiverEmail, 
         subject: 'API Connect Subscription Request', 
        // text: `Dear ${receiverName}, we have different API's you can use.`,
-        html: `<div style="margin-top: 7%">
-        <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595967472/blog/2020-07-28T20:18:29.071Z.png" 
-        />
-        <div style="padding-left: 3%; padding-right: 3%; justify-content: center">
-        <p>Hello ${receiverName},</p>
-        <p>Thank you for your interest in GTBank APIs. We are currently working on some finishing 
-        touches before our final launch of the developer portal. This would be done as soon as possible. 
-        Kindly exercise patience as we put things in place.</p>
-        <p>We would inform you when the developer portal is finally up for use.</p>
-        <p>Thank you.</p>
-        </div>
-        <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595967550/blog/2020-07-28T20:19:56.387Z.png" 
-        />
-        </div>`
-      
+        html: `
+          
+          <table>
+          
+            <tr>
+              <td>
+                <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595967472/blog/2020-07-28T20:18:29.071Z.png" 
+                style="width: 95%; margin-left: 2.5%; margin-right: 2.5%" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="width: 80%; margin-left: 10%; margin-right: 10%">
+                  <p>Hello ${receiverName},</p>
+                  <p>Thank you for your interest in GTBank APIs. We are currently working on some finishing 
+                  touches before our final launch of the developer portal. This would be done as soon as possible. 
+                  Kindly exercise patience as we put things in place.</p>
+                  <p>We would inform you when the developer portal is finally up for use.</p>
+                  <p>Thank you.</p>  
+                </div> 
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595967550/blog/2020-07-28T20:19:56.387Z.png" 
+                style="width: 95%; margin-left: 2.5%; margin-right: 2.5%"/>
+              </td>
+            </tr>
+        
+          </table>  
+          `
+        
       };
     
       
