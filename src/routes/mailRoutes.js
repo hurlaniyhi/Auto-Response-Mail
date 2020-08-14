@@ -442,7 +442,7 @@ router.post('/priceList', async (req, res)=>{
 
           
           <div style= "margin-left: 10%; width: 80%; margin-right: 10%">
-            <table border=1px style="width: 100%; margin: auto">
+            <table border=1px style="width: 100%; margin: auto; border-collapse: collapse">
               <tr>
                 <td style="width: 10%; text-align: center">
                   <p><strong>S/N</strong></p>
@@ -518,7 +518,7 @@ router.post('/priceList', async (req, res)=>{
 
 
           <div style= "margin-left: 10%; width: 80%; margin-right: 10%; margin-top: 3%">
-            <table border=1px style="width: 100%; margin: auto">
+            <table border=1px style="width: 100%; margin: auto; border-collapse: collapse">
               <tr>
                 <td style="width: 10%; text-align: center">
                   <p><strong>S/N</strong></p>
@@ -569,7 +569,7 @@ router.post('/priceList', async (req, res)=>{
 
           <div style= "margin-left: 2.5%; width: 95%; margin-right: 2.5%; margin-top: 3%">
           <div style= "margin-left: 7.5%; width: 80%; margin-right: 7.5%; margin-bottom: 3%">
-            <table border=1px style="width: 100%; margin: auto">
+            <table border=1px style="width: 100%; margin: auto; border-collapse: collapse">
               <tr>
                 <td style="width: 10%; text-align: center">
                   <p><strong>S/N</strong></p>
