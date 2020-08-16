@@ -126,9 +126,9 @@ router.post('/invitation', async (req, res)=>{
 
 
 router.post('/approval', async (req, res)=>{
-  const{receiverEmail, receiverName} = req.body
+  const{receiverEmail, receiverName, applicationName} = req.body
  
-  if(!receiverEmail || !receiverName) {
+  if(!receiverEmail || !receiverName || !applicationName) {
       return res.send({message: "you must provide an email and receiverName"})
   }
 
@@ -170,7 +170,7 @@ router.post('/approval', async (req, res)=>{
                 <div style="width: 80%; margin-left: 10%; margin-right: 10%">
                   <p>Dear ${receiverName},</p>
                   <p>Your request to migrate from development plan to production environment has been carefully reviewed.</p>
-                  <p>We are happy to inform you that your request has been granted and your application has been 
+                  <p>We are happy to inform you that your request has been granted and your application (${applicationName}) has been 
                   successfully migrated from the sandbox to live plan</p>
                   <p>Kindly note that a lien has been placed on the organization bank account you filled on the Go-Live form and 
                   an email on your daily consumption would be shared with you.</p>
@@ -344,10 +344,10 @@ router.post('/launchSoon', async (req, res)=>{
 
 
 router.post('/priceList', async (req, res)=>{
-  const{receiverEmail, receiverName} = req.body
+  const{receiverEmail, receiverName, applicationName} = req.body
  
-  if(!receiverEmail || !receiverName) {
-      return res.send({message: "you must provide an email and receiverName"})
+  if(!receiverEmail || !receiverName || !applicationName) {
+      return res.send({message: "you must provide an email, receiver name and application namw"})
   }
 
  else{
@@ -387,7 +387,7 @@ router.post('/priceList', async (req, res)=>{
                 <div style="width: 80%; margin-left: 10%; margin-right: 10%">
                   <p style="padding-bottom: 3%">Dear ${receiverName},</p>
                   
-                  <p>We received your request to upgrade to production for the "finance application" on your profile. 
+                  <p>We received your request to upgrade to production for the "finance application (${applicationName})" on your profile. 
                   Kindly reply this mail with the following documents pending the approval of your request:</p>
                   
                 </div>
