@@ -387,7 +387,7 @@ router.post('/priceList', async (req, res)=>{
                 <div style="width: 80%; margin-left: 10%; margin-right: 10%">
                   <p style="padding-bottom: 3%">Dear ${receiverName},</p>
                   
-                  <p>We received your request to upgrade to production for the "finance application (${applicationName})" on your profile. 
+                  <p>We received your request to upgrade to production for the "${applicationName} application" on your profile. 
                   Kindly reply this mail with the following documents pending the approval of your request:</p>
                   
                 </div>
