@@ -68,7 +68,7 @@ router.post('/invitation', async (req, res)=>{
                     <p>Take advantage of our API offerings grouped into Payments, Accounts, Identity and build best in class products and solutions that speak to our customers' needs.</p>
                     <p>We are hereby specially inviting you and your team to join the pilot test of the sandbox before we launch. 
                     Kindly share the email address of the person/persons to test the APIs so we can approve after an account has been created.</p>
-                    <p>Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
+                    
                     </div>
                 </td>
               </tr>
@@ -77,6 +77,7 @@ router.post('/invitation', async (req, res)=>{
                 <td>
                   <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595956228/blog/2020-07-28T17:11:14.703Z.png" 
                   style="width: 95%; margin-left: 2.5%; margin-right: 2.5%" />
+                  <p style="width: 95%; margin-left: 2.5%; margin-right: 2.5%; font-size: 10px">Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
                 </td>
               </tr>
         
@@ -129,7 +130,7 @@ router.post('/approval', async (req, res)=>{
   const{receiverEmail, receiverName, applicationName} = req.body
  
   if(!receiverEmail || !receiverName || !applicationName) {
-      return res.send({message: "you must provide an email and receiverName"})
+      return res.send({message: "you must provide an email, receiver name and application name"})
   }
 
  else{
@@ -175,7 +176,7 @@ router.post('/approval', async (req, res)=>{
                   <p>Kindly note that a lien has been placed on the organization bank account you filled on the Go-Live form and 
                   an email on your daily consumption would be shared with you.</p>
                   <p>Welcome to GTBank API Community.</p>  
-                  <p>Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
+                  
                 </div>        
               </td>
             </tr>
@@ -184,9 +185,10 @@ router.post('/approval', async (req, res)=>{
               <td>
                 <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595966422/blog/2020-07-28T20:01:12.087Z.png" 
                 style="width: 95%; margin-left: 2.5%; margin-right: 2.5%" />
+                <p style="width: 95%; margin-left: 2.5%; margin-right: 2.5%; font-size: 10px">Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
               </td>
             </tr>
-        
+            
           </table>  
           `
       
@@ -280,7 +282,6 @@ router.post('/launchSoon', async (req, res)=>{
                   touches before our final launch of the developer portal. This would be done as soon as possible. 
                   Kindly exercise patience as we put things in place.</p>
                   <p>We would inform you when the developer portal is finally up for use.</p>
-                  <p>Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
                   <p>Thank you.</p>  
                 </div> 
               </td>
@@ -290,6 +291,7 @@ router.post('/launchSoon', async (req, res)=>{
               <td>
                 <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595967550/blog/2020-07-28T20:19:56.387Z.png" 
                 style="width: 95%; margin-left: 2.5%; margin-right: 2.5%"/>
+                <p style="width: 95%; margin-left: 2.5%; margin-right: 2.5%; font-size: 10px">Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
               </td>
             </tr>
         
@@ -495,7 +497,7 @@ router.post('/priceList', async (req, res)=>{
                 </td>
 
                 <td style="font-weight: bold; text-align: center">
-                 <p style="display: inline-block">NGN</p><p style= "color: blue; display: inline-block">10.00</p>   
+                 <p>NGN10.00</p>   
                 </td>
               </tr>
 
@@ -509,7 +511,7 @@ router.post('/priceList', async (req, res)=>{
                 </td>
 
                 <td style="font-weight: bold; text-align: center">
-                <p style="display: inline-block">NGN</p><p style= "color: blue; display: inline-block">75.00</p>  
+                <p>NGN75.00</p> 
                 </td>
               </tr>
             </table>
@@ -543,7 +545,7 @@ router.post('/priceList', async (req, res)=>{
                 </td>
 
                 <td style="font-weight: bold; text-align: center">
-                <p style="display: inline-block">NGN</p><p style= "color: blue; display: inline-block">10.00</p>   
+                <p style="display: inline-block">NGN10.00</p>   
                 </td>
               </tr>
 
@@ -557,7 +559,7 @@ router.post('/priceList', async (req, res)=>{
                 </td>
 
                 <td style="font-weight: bold; text-align: center">
-                <p style="display: inline-block">NGN</p><p style= "color: blue; display: inline-block">10.00</p>
+                <p>NGN10.00</p>
                 </td>
               </tr>
 
@@ -598,15 +600,16 @@ router.post('/priceList', async (req, res)=>{
                 </td>
               </tr>
               
-            </table>
-            <p style="padding-top: 2%">Please note prices attracts VAT @7.5%.</p>
-            <p style="padding-top: 3%">Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
+          </table>
 
-          </div>
+            <p style="padding-top: 2%">Please note prices attracts VAT @7.5%.</p>
+            
+        </div>
           
           <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595956228/blog/2020-07-28T17:11:14.703Z.png" 
               style="width: 100%" />
-          </div>
+          <p style="font-size: 10px">Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
+      </div>
 
 
         `
