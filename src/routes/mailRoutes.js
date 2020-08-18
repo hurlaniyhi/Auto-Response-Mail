@@ -608,7 +608,7 @@ router.post('/priceList', async (req, res)=>{
           
           <img src="https://res.cloudinary.com/dcx4utzdx/image/upload/v1595956228/blog/2020-07-28T17:11:14.703Z.png" 
               style="width: 100%" />
-          <p style="font-size: 10px">Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
+          <p style="font-size: 12px; text-align: center">Learn more at <a href="https://developer.gtbank.com">https://developer.gtbank.com</a></p>
       </div>
 
 
